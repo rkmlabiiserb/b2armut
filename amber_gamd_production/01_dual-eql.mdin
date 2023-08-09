@@ -2,7 +2,7 @@
     imin=0,
     irest=0,
     ntx=1,
-    nstlim=51000000,
+    nstlim=55000000,
     dt=0.002,
     ig=-1,
 
@@ -43,7 +43,7 @@
     iE=1,             ! Set the threshold energy to lower bound E=Vmax  
     irest_gamd=0,     ! Not a restart GaMD Simulation
     ntcmdprep=200000,   ! Preparatory cMD steps
-    ntcmd=1000000,    ! No. of cMD steps to collect statistics
+    ntcmd=5000000,    ! No. of cMD steps to collect statistics
     ntebprep=800000,  ! Preparatory GaMD steps
     nteb=50000000,    ! No. of equilibration steps after adding boost potential
     ntave=50000,      ! Calculate running average 
