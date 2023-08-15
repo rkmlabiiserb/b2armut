@@ -46,7 +46,7 @@
     ntcmd=6000000,    ! No. of cMD steps to collect statistics
     ntebprep=800000,  ! Preparatory GaMD steps
     nteb=20000000,    ! No. of equilibration steps after adding boost potential
-    ntave=50000,      ! Calculate running average 
+    ntave=400000,      ! Calculate running average 
     sigma0P=6.0,      ! Upper limit of SD of the total potential boost
     sigma0D=6.0,      ! Upper limit of SD of the dihedral potential boost
    /  
