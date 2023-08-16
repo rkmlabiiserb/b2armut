@@ -40,12 +40,12 @@ def load_data(file_path):
 
 # Classifer definitions
 def random_forest_classifier(X_train, y_train):
-    clf = RandomForestClassifier(n_estimators=100, random_state=42)
+    clf = RandomForestClassifier(n_estimators=25, random_state=42)
     clf.fit(X_train, y_train)
     return clf
 
 def xgboost_classifier(X_train, y_train):
-    clf = XGBClassifier(random_state=42)
+    clf = XGBClassifier(learning_rate=0.3, max_depth=6, random_state=42)
     clf.fit(X_train, y_train)
     return clf
 
@@ -116,11 +116,11 @@ def main():
 
     # Classifiers
     classifiers = [
+        ('Gradient_Boosting', gradient_boosting_classifier),
         ('Random_Forest', random_forest_classifier),
         ('XGBoost', xgboost_classifier),
-        ('Decision_Tree', decision_tree_classifier),
-        ('Gradient_Boosting', gradient_boosting_classifier),
-        ('Adaboost', adaboost_classifier),
+        #('Decision_Tree', decision_tree_classifier),
+        #('Adaboost', adaboost_classifier),
         # Add other classifiers here if needed
     ]
 
