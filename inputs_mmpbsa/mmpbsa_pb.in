@@ -1,0 +1,14 @@
+&general
+  use_sander=1,
+  startframe=1, endframe=1500, interval=1,
+  keep_files=0, debug_printlevel=2,
+/
+
+&pb
+  radiopt=0, indi=4.0, exdi=80.0, istrng=0.150,
+  fillratio=4, ipb=1, nfocus=1,
+  bcopt=10, eneopt=1, cutfd=5.0, cutnb=99.0,
+  npbverb=1, solvopt=2, inp=1,
+  memopt=1, emem=2.0, mctrdz=0, mthick=40, poretype=0,
+  maxarcdot=15000,
+/
